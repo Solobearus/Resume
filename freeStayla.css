@@ -1,0 +1,83 @@
+:root {
+    /* --mc: rgb(9, 255, 0); */
+    /* --sc: rgb(5, 107, 1); */
+    --mbgc: rgb(234, 202, 255);
+    --sbgc: rgb(57, 0, 131);
+    --bbgc: rgb(29, 29, 29);
+    --bshc: rgb(255, 255, 255);
+    --main-font-color: rgb(29, 29, 29);
+    --secondery-font-color: rgb(209, 209, 209);
+    --padding: 10px;
+    --padding-width: 20px;
+    --border-radius:
+}
+
+body {
+    background-color: var(--bbgc);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.resume {
+    display: grid;
+    width: 1080px;
+    /* height: calc(1080px * 1.414); */
+    grid: "header header" "side main" / 1fr 1.5fr;
+    box-shadow: 0 0 40px var(--mbgc);
+}
+
+.header {
+    grid-area: header;
+    background: var(--mbgc);
+}
+
+.header>h1 {
+    padding: 0 var(--padding-width);
+}
+
+.header>h2 {
+    padding: var(--padding) var(--padding-width);
+    background: var(--sbgc);
+    text-align: right;
+    color: var(--secondery-font-color);
+}
+
+.side {
+    grid-area: side;
+    background: var(--sbgc);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--secondery-font-color);
+}
+
+.main {
+    grid-area: main;
+    background: var(--mbgc);
+    /* padding: var(--p) var(--padding-width); */
+}
+
+.main>h2 {
+    padding: var(--padding) var(--padding-width);
+}
+
+.section {
+    padding: var(--padding) var(--padding-width);
+    border-radius: 20px;
+    background-color: inherit;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+}
+
+.section:hover {
+    z-index: 1;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in;
+    box-shadow: 4px 4px 10px black;
+}
