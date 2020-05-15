@@ -1,27 +1,36 @@
+@font-face {
+    font-family: 'norwester';
+    src: url("./norwester.otf") format("opentype");
+}
+
 :root {
     /* --mc: rgb(9, 255, 0); */
     /* --sc: rgb(5, 107, 1); */
-    --mbgc: rgb(234, 202, 255);
-    --sbgc: rgb(57, 0, 131);
-    --bbgc: rgb(29, 29, 29);
-    --bshc: rgb(255, 255, 255);
-    --main-font-color: rgb(29, 29, 29);
-    --secondery-font-color: rgb(209, 209, 209);
+    --main-bgc: #fff;
+    --second-bgc: #a2ddff;
+    --action-bgc: #a2ddff;
+    --back-bgc: rgb(29, 29, 29);
+    /* --bshc: rgb(255, 255, 255); */
+    --main-font-color: #000;
+    --secondery-font-color: #000;
     --padding: 10px;
     --padding-width: 20px;
-    --border-radius:
+    --title-font-size: 2em;
+    --titles-font: 'norwester';
+    --paragraphs-font: 'Roboto', sans-serif;
 }
 
 body {
-    background-color: var(--bbgc);
+    background-color: var(--back-bgc);
     margin: 0;
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--paragraphs-font);
 }
 
-h1 {
-    font-size: 3em;
+h1>pre {
+    font-size: var(--title-font-size);
+    font-family: var(--titles-font);
 }
 
 .resume {
@@ -29,12 +38,13 @@ h1 {
     width: 1080px;
     /* height: calc(1080px * 1.414); */
     grid: "header header" "side main" / 1fr 1.5fr;
-    box-shadow: 0 0 40px var(--mbgc);
+    /* box-shadow: 10px 0 10px var(--main-bgc); */
+    color: var(--main-font-color);
 }
 
 .header {
     grid-area: header;
-    background: var(--mbgc);
+    background: var(--main-bgc);
 }
 
 .header>h1 {
@@ -43,14 +53,14 @@ h1 {
 
 .header>h2 {
     padding: var(--padding) var(--padding-width);
-    background: var(--sbgc);
+    background: var(--action-bgc);
     text-align: right;
     color: var(--secondery-font-color);
 }
 
 .side {
     grid-area: side;
-    background: var(--sbgc);
+    background: var(--second-bgc);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,7 +69,7 @@ h1 {
 
 .main {
     grid-area: main;
-    background: var(--mbgc);
+    background: var(--main-bgc);
     /* padding: var(--p) var(--padding-width); */
 }
 
@@ -69,7 +79,7 @@ h1 {
 
 .section {
     padding: var(--padding) var(--padding-width);
-    border-radius: 20px;
+    /* border-radius: 20px; */
     background-color: inherit;
     transition: all 0.2s ease-in;
     cursor: pointer;
