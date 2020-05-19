@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'norwester';
-    src: url("./norwester.otf") format("opentype");
+    src: url("../fonts/norwester.otf") format("opentype");
 }
 
 :root {
@@ -62,9 +62,11 @@ body {
 
 .header_title_img {
     position: absolute;
-    filter: grayscale(100%) brightness(120%) contrast(110%);
+    width: 1280px;
+    /* height: 880px; */
+    /* filter: grayscale(100%) brightness(120%) contrast(110%); */
     left: -50px;
-    top: -100px;
+    top: -220px;
 }
 
 .side {

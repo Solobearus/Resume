@@ -1,3 +1,5 @@
+const header_title_img = $('.header_title_img')
+
 $.fn.parallax = function (resistance, mouse) {
     $el = $(this);
     // console.log('test');
@@ -15,9 +17,12 @@ $(document).mousemove(function (e) {
 
 $('.lightBlue').click(() => {
     changeColors('lightBlue')
+    header_title_img.attr("src","./imgs/w_bg.jpg");
+
 })
 $('.darkBlue').click(() => {
     changeColors('darkBlue')
+    header_title_img.attr("src","./imgs/db_bg.jpg");
 })
 $('.lightYellow').click(() => {
     changeColors('lightYellow')
