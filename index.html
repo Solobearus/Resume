@@ -3,16 +3,29 @@
 
 <head>
     <title>Pretty amazing person.com</title>
-    <link rel="stylesheet" href="freeStayla.css">
+    <link rel="stylesheet" href="./css/freeStayla.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
+    <div class="colors">
+        <button class="lightBlue circle"></button>
+        <button class="darkBlue circle"></button>
+        <button class="lightYellow circle"></button>
+        <button class="darkYellow circle"></button>
+    </div>
     <div class="resume">
         <div class="header">
-            <div class="headerimg">
-                <h1>
-                    <pre><span>I</span><span>V</span><span>A</span><span>N</span> <span>S</span><span>O</span><span>L</span><span>O</span><span>D</span><span>O</span><span>V</span></pre>
+            <div class="header_title" data-relative-input="true">
+                <img class="header_title_img" src="./imgs/w__bg.jpg" alt="">
+                <h1 class="header_title_h1">
+                    <span>I</span><span>V</span><span>A</span><span>N</span>
+                    <span>S</span><span>O</span><span>L</span><span>O</span><span>D</span><span>O</span><span>V</span>
                 </h1>
             </div>
             <h2>FULLSTACK DEVELOPER</h2>
@@ -66,8 +79,6 @@
         <div class="main">
             <div class="section">
                 <h2>EMPLOYMENT HISTORY</h2>
-            </div>
-            <div class="section">
                 <h3>FRONT-END TEACHER</h3>
                 <h4>Appleseeds Academy | 2020</h4>
                 <p>
@@ -122,6 +133,11 @@
             </div>
         </div>
     </div>
+    <div class="nothing">
+
+    </div>
 </body>
+<script src="./js/index.js"></script>
+<script src="./js/colors.js"></script>
 
 </html>
