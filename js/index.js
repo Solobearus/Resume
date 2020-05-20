@@ -15,23 +15,29 @@ $(document).mousemove(function (e) {
     $(".header_title_h1").parallax(120, e);
 });
 
-$('.lightBlue').click(() => {
+$('.lightBlue').click((e) => {
     changeColors('lightBlue')
-    header_title_img.attr("src","./imgs/w_bg.jpg");
+    header_title_img.attr("src", "./imgs/w_bg.jpg");
 
 })
 $('.darkBlue').click(() => {
     changeColors('darkBlue')
-    header_title_img.attr("src","./imgs/db_bg.jpg");
+    header_title_img.attr("src", "./imgs/db_bg.jpg");
 })
 $('.lightYellow').click(() => {
     changeColors('lightYellow')
+    header_title_img.attr("src", "./imgs/y_bg.jpg");
 })
-$('.darkYellow').click(() => {
-    changeColors('darkYellow')
+$('.darkGreen').click(() => {
+    changeColors('darkGreen')
+    header_title_img.attr("src", "./imgs/g_bg.jpg");
 })
 
 function changeColors(colorScheme) {
+
+    $('.circle').removeClass('selectedColor');
+    $('.' + colorScheme).addClass('selectedColor');
+
     document.documentElement.style
         .setProperty('--main-bgc', colors[colorScheme].mainBgc);
     document.documentElement.style

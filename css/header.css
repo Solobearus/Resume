@@ -1,0 +1,84 @@
+.header {
+    grid-area: header;
+    background: var(--main-bgc);
+    transition: linear .5s all;
+}
+
+.header_title {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.header_title_h1 {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.header_title_img {
+    transition: linear .5s all;
+    position: absolute;
+    width: 1280px;
+    left: -50px;
+    top: -220px;
+}
+
+.header>h2 {
+    font-family: var(--paragraphs-font);
+    padding: var(--padding) var(--padding-width);
+    margin: 0 0 calc(var(--margin)*3) 0;
+    background: var(--action-bgc);
+    text-align: right;
+    color: var(--secondery-font-color);
+    transition: linear .5s all;
+    /* background: var(--main-bgc); */
+}
+
+.letter {
+    transition: color 0.5s linear;
+}
+
+.letter:nth-child(1) {
+    transition-delay: 0.001s;
+}
+
+.letter:nth-child(2) {
+    transition-delay: 0.05s;
+}
+
+.letter:nth-child(3) {
+    transition-delay: 0.1s;
+}
+
+.letter:nth-child(4) {
+    transition-delay: 0.15s;
+}
+
+.letter:nth-child(5) {
+    transition-delay: 0.2s;
+}
+
+.letter:nth-child(6) {
+    transition-delay: 0.25s;
+}
+
+.letter:nth-child(7) {
+    transition-delay: 0.3s;
+}
+
+.letter:nth-child(8) {
+    transition-delay: 0.35s;
+}
+
+.letter:nth-child(9) {
+    transition-delay: 0.4s;
+}
+
+.letter:nth-child(10) {
+    transition-delay: 0.45s;
+}
+
+.letter:nth-child(11) {
+    transition-delay: 0.5s;
+}

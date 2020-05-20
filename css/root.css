@@ -1,0 +1,44 @@
+:root {
+    --main-bgc: #fff;
+    --second-bgc: #a2ddff;
+    --action-bgc: #a2ddff;
+    --back-bgc: #222;
+    --main-font-color: #000;
+    --secondery-font-color: #000;
+    --padding: 15px;
+    --padding-width: 25px;
+    --margin: 10px;
+    --h1-font-size: 2.4em;
+    --h2-font-size: 1.5em;
+    --h3-font-size: 1.1em;
+    --h4-font-size: 2.2em;
+    --titles-font: 'norwester';
+    --paragraphs-font: 'Roboto', sans-serif;
+}
+
+/* 
+    var(--main-bgc) 
+    var(--second-bgc) 
+    var(--action-bgc) 
+    var(--back-bgc) 
+    var(--main-action-back)
+    var(--second-action-back) 
+    var(--padding) 
+    var(--padding-width) 
+    var(--margin) 
+    var(--h1-font-size) 
+    var(--h2-font-size) 
+    var(--h3-font-size) 
+    var(--h4-font-size) 
+    var(--titles-font) 
+    var(--paragraphs-font)  
+*/
+
+@font-face {
+    font-family: 'norwester';
+    src: url("../fonts/norwester.otf") format("opentype");
+}
+
+* {
+    margin: 0;
+}

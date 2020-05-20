@@ -1,0 +1,41 @@
+.colors {
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding);
+    /* margin: var(--margin); */
+}
+
+.lightBlue {
+    background: #a2ddff;
+}
+
+.darkBlue {
+    background: #2A4379;
+}
+
+.lightYellow {
+    background: #FED67D;
+}
+
+.darkGreen {
+    background: #628652;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    filter: grayscale(80%);
+    border: 0;
+    margin: var(--margin);
+
+}
+
+.circle:hover {
+    transition: 0.1s;
+    filter: grayscale(0%);
+}
+
+.selectedColor {
+    filter: grayscale(0%);
+}
