@@ -4,25 +4,33 @@
     flex-direction: column;
 }
 
+.attention {
+    animation: attention 8s ease infinite ;
+}
+
 .lightBlue {
     background: #a2ddff;
-    animation: attention 8s ease 3 0s;
+    animation-delay: 0;
 }
 
 .darkBlue {
     background: #2A4379;
-    animation: attention 8s ease 3 0.15s;
+    /* animation: attention 8s ease infinite 0.15s; */
+    animation-delay: 0.15s;
 }
 
 .lightYellow {
     background: #FED67D;
-    animation: attention 8s ease 3 0.3s;
+    /* animation: attention 8s ease infinite 0.3s; */
+    animation-delay:  0.3s;
 }
 
 .darkGreen {
     background: #628652;
-    animation: attention 8s ease 3 0.45s;
+    /* animation: attention 8s ease infinite 0.45s; */
+    animation-delay: 0.45s;
 }
+
 
 .circle {
     position: relative;
@@ -41,6 +49,8 @@
     filter: grayscale(0%);
     transform: scale(1.2);
 }
+
+
 
 .selectedColor {
     filter: grayscale(0%);

@@ -17,12 +17,15 @@ $(document).mousemove(function (e) {
 $('.lightBlue').click((e) => {
     changeColors('lightBlue')
 }).addClass('selectedColor');
+
 $('.darkBlue').click(() => {
     changeColors('darkBlue')
 })
+
 $('.lightYellow').click(() => {
     changeColors('lightYellow')
 })
+
 $('.darkGreen').click(() => {
     changeColors('darkGreen')
 })
@@ -31,6 +34,7 @@ function changeColors(colorScheme) {
     $('.header_title_img').removeClass('shown')
     $('.' + colorScheme + 'img').addClass('shown')
     $('.circle').removeClass('selectedColor');
+    $('.circle').removeClass('attention');
     $('.' + colorScheme).addClass('selectedColor');
 
     document.documentElement.style
