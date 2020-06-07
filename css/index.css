@@ -1,9 +1,7 @@
-
 body {
     background-color: var(--back-bgc);
     display: grid;
     font-family: var(--paragraphs-font);
-    /* grid-template-areas: 'colors resume .'; */
 }
 
 .resume {
@@ -12,8 +10,6 @@ body {
     width: 1080px;
     grid: "header header" "side main" / 1fr 1.5fr;
     color: var(--main-font-color);
-    /* height: calc(1080px * 1.414); */
-    /* box-shadow: 10px 0 10px var(--main-bgc); */
 }
 
 .side {
@@ -30,19 +26,17 @@ body {
     transition: linear .5s all;
     grid-area: main;
     background: var(--main-bgc);
-    /* padding: var(--p) var(--padding-width); */
 }
 
 .section {
     padding: var(--padding) var(--padding-width);
-    /* border-radius: 20px; */
     background-color: inherit;
     transition: transform .2s ease-in;
-    cursor: pointer;
+    cursor: default;
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
-h1 {
+.header_title_h1 {
     font-size: var(--h1-font-size);
     font-family: var(--titles-font);
     letter-spacing: 0.4em;
@@ -87,16 +81,59 @@ p {
     box-shadow: 4px 4px 10px rgba(0, 0, 0, .4);
 }
 
+.bio_link {
+    text-decoration: none;
+    color: var(--main-font-color);
+}
 
+*, *:after, *::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
-/* @keyframes loadingF {
-    0% {
-        opacity: 1;
-    }
-    20% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
+nav a {
+    position: relative;
+    display: flex;
+    margin: 15px 0;
+    outline: none;
+    color: var(--main-font-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
+    /* font-size: 1.35em; */
+}
+
+/* Effect 5: same word slide in */
+
+.cl-effect-5 a {
+    overflow: hidden;
+    padding: 0 4px;
+    height: 1em;
+}
+
+.cl-effect-5 a span {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.3s;
+    -moz-transition: -moz-transform 0.3s;
+    transition: transform 0.3s;
+}
+
+.cl-effect-5 a span::before {
+    position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    font-weight: 700;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.cl-effect-5 a:hover span, .cl-effect-5 a:focus span {
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
