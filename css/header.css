@@ -17,22 +17,28 @@
 }
 
 .header_title_img {
+    opacity: 0;
     transition: linear .5s all;
+    transition: linear 1s opacity;
     position: absolute;
     width: 1280px;
-    left: -50px;
+    left: -70px;
     top: -220px;
 }
 
-.header>h2 {
-    font-family: var(--paragraphs-font);
+.header_sub_title {
+    overflow: hidden;
     padding: var(--padding) var(--padding-width);
-    margin: 0 0 calc(var(--margin)*3) 0;
     background: var(--action-bgc);
     text-align: right;
     color: var(--secondery-font-color);
     transition: linear .5s all;
-    /* background: var(--main-bgc); */
+    margin: 0 0 calc(var(--margin)*3) 0;
+}
+
+.header_sub_title>h2 {
+    font-family: var(--paragraphs-font);
+    margin: 0;
 }
 
 .letter {
@@ -81,4 +87,8 @@
 
 .letter:nth-child(11) {
     transition-delay: 0.5s;
+}
+
+.shown {
+    opacity: 1;
 }

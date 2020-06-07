@@ -1,15 +1,13 @@
 
-
-
-
 body {
     background-color: var(--back-bgc);
-    display: flex;
-    justify-content: center;
+    display: grid;
     font-family: var(--paragraphs-font);
+    /* grid-template-areas: 'colors resume .'; */
 }
 
 .resume {
+    grid-area: resume;
     display: grid;
     width: 1080px;
     grid: "header header" "side main" / 1fr 1.5fr;

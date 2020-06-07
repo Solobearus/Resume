@@ -1,41 +1,62 @@
 .colors {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    padding: var(--padding);
-    /* margin: var(--margin); */
 }
 
 .lightBlue {
     background: #a2ddff;
+    animation: attention 8s ease 3 0s;
 }
 
 .darkBlue {
     background: #2A4379;
+    animation: attention 8s ease 3 0.15s;
 }
 
 .lightYellow {
     background: #FED67D;
+    animation: attention 8s ease 3 0.3s;
 }
 
 .darkGreen {
     background: #628652;
+    animation: attention 8s ease 3 0.45s;
 }
 
 .circle {
+    position: relative;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     filter: grayscale(80%);
     border: 0;
     margin: var(--margin);
-
+    outline: none;
+    transition: all 0.2s;
 }
 
 .circle:hover {
-    transition: 0.1s;
+    /* transition: 0.1s; */
     filter: grayscale(0%);
+    transform: scale(1.2);
 }
 
 .selectedColor {
     filter: grayscale(0%);
+    box-shadow: 0px 0px 10px var(--main-bgc);
+}
+
+@keyframes attention {
+    8% {
+        left: 0;
+    }
+    12% {
+        left: 40px;
+        /* transform: translateX(40px) ; */
+    }
+    16% {
+        left: 0;
+        /* transform: translateX(0px); */
+    }
 }
