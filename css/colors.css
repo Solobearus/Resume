@@ -1,15 +1,20 @@
-.colors {
+.colors_desktop {
     position: fixed;
     display: flex;
     flex-direction: column;
 }
 
+.colors_mobile {
+    display: none;
+    flex-direction: row;
+}
+
 .attention {
-    animation: attention 8s ease infinite ;
+    animation: attention 8s ease infinite;
 }
 
 .lightBlue {
-    background: #a2ddff;
+    background: #fff;
     animation-delay: 0;
 }
 
@@ -20,7 +25,7 @@
 
 .lightYellow {
     background: #FED67D;
-    animation-delay:  0.3s;
+    animation-delay: 0.3s;
 }
 
 .darkGreen {
@@ -60,5 +65,32 @@
     }
     16% {
         left: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .header_sub_title_content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .colors_desktop {
+        display: none;
+    }
+    .colors_mobile {
+        display: inline-flex;
+        flex-direction: row;
+    }
+    @keyframes attention {
+        8% {
+            transform: scale(1.0);
+        }
+        10% {
+            transform: scale(1.5);
+        }
+        16% {
+            transform: scale(1.0);
+        }
     }
 }

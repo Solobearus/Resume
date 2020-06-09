@@ -10,8 +10,9 @@
     --margin: 10px;
     --h1-font-size: 2.4em;
     --h2-font-size: 1.5em;
-    --h3-font-size: 1.1em;
-    --h4-font-size: 2.2em;
+    --h3-font-size: 1.3em;
+    --h4-font-size: 1.1em;
+    --p-font-size: 1em;
     --titles-font: 'norwester';
     --paragraphs-font: 'Roboto', sans-serif;
 }
@@ -41,4 +42,17 @@
 
 * {
     margin: 0;
+}
+
+@media (max-width: 400px) {
+    :root {
+        --padding: 15px;
+        --padding-width: 25px;
+        --margin: 10px;
+        --h1-font-size: 2.8em;
+        --h2-font-size: 2.4em;
+        --h3-font-size: 2.2em;
+        --h4-font-size: 2em;
+        --p-font-size: 1.8em;
+    }
 }
