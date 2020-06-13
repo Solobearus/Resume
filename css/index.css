@@ -132,6 +132,7 @@ nav a {
 @media (max-width: 400px) {
     .resume {
         grid: "header" "main" "side";
+        width: 100vw;
     }
     .section{
         margin: var(--margin);

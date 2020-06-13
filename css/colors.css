@@ -69,6 +69,10 @@
 }
 
 @media (max-width: 400px) {
+    .circle {
+        width: 20px;
+        height: 20px;
+    }
     .header_sub_title_content {
         width: 100%;
         display: flex;
